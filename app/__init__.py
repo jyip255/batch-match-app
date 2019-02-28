@@ -5,6 +5,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 import logging
 
 app = Flask(__name__)
+from app import routes
 
 def printFolderCheck():
 	logging.getLogger().setLevel(logging.DEBUG)
