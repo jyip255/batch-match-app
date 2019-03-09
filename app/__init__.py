@@ -9,7 +9,7 @@ from app import routes
 
 def printFolderCheck():
 	logging.getLogger().setLevel(logging.DEBUG)
-	app.logger.info(str(checkFolder("../shared")))
+	app.logger.info(str(checkFolder("../shared/check/","../shared/temp/","../shared/error/","../shared/scanned/")))
 
 app.config.from_object(Config)
 sched = BackgroundScheduler()

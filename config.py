@@ -1,4 +1,4 @@
 import os
 
 class Config(object):
-    TIME_INTERVAL_MINS = 0.01
+    TIME_INTERVAL_MINS = 0.1
