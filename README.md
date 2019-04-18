@@ -1,12 +1,12 @@
 #Senior Design Flask App 
 
-#Requirements
+##Requirements
 - ImageMagick 6: https://legacy.imagemagick.org/script/download.php
 - Venv (Use Python 3) https://docs.python.org/3/library/venv.html
 - Pip https://pip.pypa.io/en/stable/installing/
 - Zbar http://zbar.sourceforge.net/index.html
 
-#First time setup
+##First time setup
 1. Create a master folder. This folder will contain all the files needed in order to run both applications.
 2. Clone the ‘senior_design_v1’ and ‘batch_match_app’ repositories into the master folder.
 3. In the master folder, at the same level as ‘senior_design_v1’ and ‘batch_match_app,’ also create a folder called ‘shared.’ Within shared, create five folders: ‘check’, ’temp’, ‘error’, ‘scanned’, and ‘nomatch’.
@@ -17,7 +17,7 @@
 8. For Windows, in order for ImageMagick to work, you have to set a MAGICK_HOME environment variable to the path of ImageMagick. You can set it in Computer -> Properties -> Advanced system settings -> Advanced -> Environment Variables.
 (E.g. New System Variable, Variable name: MAGICK_HOME, Variable value: C:\Program Files\ImageMagick-6.9.3-Q16)
 
-#Running the program:
+##Running the program:
 1. If it is not already running, start up the virtual environment by either running `. venv/Scripts/activate` (Windows) or `source venv/bin/activate`(Mac)
 2. For Mac, to use ImageMagick, run `export MAGICK_HOME=/usr/local/opt/imagemagick@6`. Be sure that ImageMagick 6 is installed.
 3. To start the exam request app, go into the ‘senior_design_v1’ folder and run `python run.py`.
