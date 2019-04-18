@@ -3,4 +3,4 @@ from app import app
 @app.route('/')
 @app.route('/index')
 def index():
-	return "Hello, World!"
+	return "Welcome to the admin site for Batch Match! ~More coming soon~"
