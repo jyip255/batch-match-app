@@ -18,7 +18,7 @@ def checkFolder(check,temp,error,scanned,nomatch):
 def handleCall(filepath,reqid,nomatch):
     data = {"filepath" : filepath, "reqid" : reqid}
     ret = requests.post(url="http://127.0.0.1:8080/attach", json=data)
-    if ret.status_code == 400:
+    if ret.status_code == 404:
         os.rename(filepath,nomatch+os.path.basename(filepath))
 
 def scanQR(check,temp,error,scanned,filename):
