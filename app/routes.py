@@ -1,11 +1,12 @@
 from app import app
 from checkFolder import checkFolder
 import os
+from flask import url_for
 
 @app.route('/')
 @app.route('/index')
 def index():
-	return "Welcome to the batch match app!"
+	return "Welcome to the batch match app!<p><a href='/status'>Check the status</a></p><p><a href='/check'>Are there files to scan?</a></p>"
 
 @app.route('/check')
 def check():
